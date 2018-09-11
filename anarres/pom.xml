@@ -16,6 +16,8 @@
 	</parent>
 	
 	<properties>
+          <maven.compiler.source>1.8</maven.compiler.source>
+          <maven.compiler.target>1.8</maven.compiler.target>
 		<mainClass>org.anarres.cpp.Main</mainClass>
 	</properties>
 	
@@ -64,15 +66,24 @@
 
 	<build>
 		<plugins>
+
 			<plugin>
 				<groupId>com.nativelibs4java</groupId>
 				<artifactId>maven-velocity-plugin</artifactId>
+                                <configuration>
+                                  <source>1.8</source>
+                                  <target>1.8</target>
+                                </configuration>
         <version>0.8</version>
 			</plugin>
 			
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-jar-plugin</artifactId>
+                                <configuration>
+                                  <source>1.8</source>
+                                  <target>1.8</target>
+                                </configuration>
 			</plugin>
 
 			<plugin>
@@ -80,8 +91,20 @@
 				<artifactId>maven-surefire-plugin</artifactId>
 				<configuration>
 					<redirectTestOutputToFile>true</redirectTestOutputToFile>
+                          <source>1.8</source>
+                          <target>1.8</target>
 				</configuration>
 			</plugin>
+                      <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-compiler-plugin</artifactId>
+                        <version>3.8.0</version>
+                        <configuration>
+                          <source>1.8</source>
+                          <target>1.8</target>
+                        </configuration>
+                      </plugin>
+
 		</plugins>
 	</build>
 </project>

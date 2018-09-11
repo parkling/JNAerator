@@ -98,7 +98,7 @@
 	<import file="${global.dir.etc}/targets/global-findbugs.xml" />
 	<import file="${global.dir.etc}/targets/global-inject.xml" />
 	<import file="${global.dir.etc}/targets/global-jar.xml" />
-	<import file="${global.dir.etc}/targets/global-javadoc.xml" />
+	<!-- <import file="${global.dir.etc}/targets/global-javadoc.xml" /> -->
 	<import file="${global.dir.etc}/targets/global-junit.xml" />
 	<import file="${global.dir.etc}/targets/global-tar.xml" />
 	<import file="${global.dir.etc}/targets/global-taskdefs.xml" />
